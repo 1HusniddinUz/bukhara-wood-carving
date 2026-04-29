@@ -1,0 +1,15 @@
+export const company = {
+  brand: "BUKHARA WOOD CARVING",
+  legalName: "ASHUROV SHAVKAT HAKIMOVICH",
+  founder: "Ashurov Shavkat Hakimovich",
+  activity: "Yog‘och o‘ymakorligi",
+  experience: "35+",
+  generation: "4-avlod",
+  address: "Buxoro viloyati, Buxoro shahri, Naqshbandiy 88",
+  phones: ["998907180346", "998937180346"],
+  email: "sh7180346@yandex.ru",
+  telegram: "https://t.me/bukharawoodcarving",
+  instagram: "https://instagram.com/bukharawoodcarving",
+  facebook: "Shavkat Ashurov",
+  mapQuery: "Buxoro Naqshbandiy 88",
+};

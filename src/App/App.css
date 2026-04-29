@@ -1,0 +1,33 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__main {
+  flex: 1;
+  position: relative;
+}
+
+.page-fallback {
+  padding: 120px 0 90px;
+}
+
+.page-fallback__box {
+  padding: 34px;
+}
+
+.page-fallback h1 {
+  margin: 0 0 14px;
+  font-family: var(--font-title);
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 0.94;
+  letter-spacing: -0.03em;
+}
+
+.page-fallback p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}

@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap");
+
+:root {
+  /* === MINIMAL PREMIUM PALETTE === */
+  --bg: #f6f2eb;
+  --bg-soft: #efe7dc;
+  --bg-deep: #e6dacb;
+
+  --surface: rgba(255, 255, 255, 0.26);
+  --surface-strong: rgba(255, 255, 255, 0.38);
+  --surface-soft: rgba(255, 255, 255, 0.16);
+
+  --text: #1f1a16;
+  --muted: #75685a;
+
+  --primary: #6e4b2f;
+  --primary-soft: #8f6745;
+  --accent: #b99568;
+
+  --line: rgba(72, 52, 37, 0.1);
+  --line-strong: rgba(72, 52, 37, 0.16);
+
+  /* === SHADOWS — VERY MINIMAL === */
+  --shadow-xs: 0 4px 10px rgba(38, 28, 20, 0.04);
+  --shadow-sm: 0 8px 20px rgba(38, 28, 20, 0.06);
+  --shadow-md: 0 14px 34px rgba(38, 28, 20, 0.08);
+  --shadow-lg: 0 20px 48px rgba(38, 28, 20, 0.1);
+
+  --blur: blur(14px);
+
+  --font-title: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --container: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(185, 149, 104, 0.12), transparent 24%),
+    radial-gradient(circle at 88% 14%, rgba(110, 75, 47, 0.08), transparent 24%),
+    linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 52%, var(--bg-deep) 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.02)),
+    linear-gradient(90deg, rgba(72, 52, 37, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(72, 52, 37, 0.02) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+  mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.35));
+  z-index: -2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(110, 75, 47, 0.14);
+  color: var(--text);
+}
+
+.container {
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* === GLOBAL GLASS SYSTEM === */
+.glass-panel {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.18)),
+    var(--surface);
+  border: 1px solid var(--line);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.glass-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 38%),
+    linear-gradient(315deg, rgba(255, 255, 255, 0.08), transparent 44%);
+  pointer-events: none;
+}
+
+.glass-panel--strong {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.2)),
+    var(--surface-strong);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.card-3d {
+  transition:
+    transform 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.card-3d:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--line-strong);
+}
+
+/* === TYPOGRAPHY === */
+.section-shell {
+  position: relative;
+  padding: 118px 0 88px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 0 0 16px;
+  font-family: var(--font-title);
+  font-size: clamp(34px, 5vw, 66px);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.section-text {
+  margin: 0;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* === BUTTONS === */
+.glass-btn,
+.glass-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-btn {
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-soft), var(--primary));
+  box-shadow: 0 10px 24px rgba(110, 75, 47, 0.12);
+}
+
+.glass-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(110, 75, 47, 0.14);
+}
+
+.glass-btn-secondary {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.glass-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xs);
+  border-color: var(--line-strong);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.floating-orb {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(185, 149, 104, 0.16), transparent 70%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+/* === FALLBACK PAGE === */
+.page-fallback {
+  padding: 120px 0 90px;
+}
+
+.page-fallback__box {
+  padding: 34px;
+}
+
+.page-fallback h1 {
+  margin: 0 0 14px;
+  font-family: var(--font-title);
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 0.94;
+  letter-spacing: -0.03em;
+}
+
+.page-fallback p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .section-shell {
+    padding: 98px 0 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(var(--container), calc(100% - 24px));
+  }
+
+  .section-shell {
+    padding: 84px 0 58px;
+  }
+
+  .section-text,
+  .page-fallback p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+}
