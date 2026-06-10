@@ -37,6 +37,7 @@ export default function Products() {
 
   const [activeCategory, setActiveCategory] = useState("all");
   const [search, setSearch] = useState("");
+  const [selectedId, setSelectedId] = useState(null);
 
   const getText = (value) => value?.[lang] || value?.uz || "";
 
@@ -57,8 +58,21 @@ export default function Products() {
     });
   }, [activeCategory, search, lang]);
 
-  const featuredProduct = filteredProducts[0];
-  const otherProducts = filteredProducts.slice(1);
+  const featuredProduct =
+    filteredProducts.find((product) => product.id === selectedId) ||
+    filteredProducts[0];
+  const otherProducts = filteredProducts.filter(
+    (product) => product.id !== featuredProduct?.id
+  );
+
+  const handleSelectProduct = (productId) => {
+    setSelectedId(productId);
+
+    if (typeof window !== "undefined") {
+      const featured = document.querySelector(".products__featured");
+      featured?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
   const getCategoryLabel = (categoryValue) => {
     const category = productCategories.find((item) => item.value === categoryValue);
@@ -133,7 +147,11 @@ export default function Products() {
 
         {featuredProduct ? (
           <>
-            <Reveal className="products__featured" delay={0.1}>
+            <Reveal
+              className="products__featured"
+              delay={0.1}
+              key={featuredProduct.id}
+            >
               <div className="products__featured-media">
                 <img
                   src={featuredProduct.image}
@@ -174,6 +192,15 @@ export default function Products() {
                   whileHover={{
                     y: -8,
                     transition: { duration: 0.24 },
+                  }}
+                  onClick={() => handleSelectProduct(product.id)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      handleSelectProduct(product.id);
+                    }
                   }}
                 >
                   <div className="products__card-index">

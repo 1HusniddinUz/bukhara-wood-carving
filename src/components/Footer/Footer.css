@@ -89,6 +89,14 @@
   color: var(--text);
 }
 
+.footer__mark img {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
 .footer__brandText strong {
   display: block;
   margin-bottom: 14px;
@@ -237,6 +245,26 @@
 .footer__group p {
   margin: 0;
   max-width: 260px;
+}
+
+.footer__line {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footer__line svg {
+  flex-shrink: 0;
+  font-size: 15px;
+  color: var(--accent, #b99568);
+}
+
+.footer__line--address {
+  align-items: flex-start;
+}
+
+.footer__line--address svg {
+  margin-top: 3px;
 }
 
 .footer__bottom {

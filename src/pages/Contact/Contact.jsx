@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FiMapPin, FiPhone, FiMail, FiArrowUpRight } from "react-icons/fi";
 import Reveal from "../../components/Reveal/Reveal";
 import { company } from "../../data/company";
 import "./Contact.css";
@@ -9,9 +10,9 @@ export default function Contact() {
   const { t } = useTranslation();
 
   const contactInfo = [
-    [t("contact.info.location"), company.address],
-    [t("contact.info.phone"), `+${company.phones[0]}`],
-    [t("contact.info.email"), company.email],
+    { icon: FiMapPin, label: t("contact.info.location"), value: company.address },
+    { icon: FiPhone, label: t("contact.info.phone"), value: `+${company.phones[0]}` },
+    { icon: FiMail, label: t("contact.info.email"), value: company.email },
   ];
 
   const [formData, setFormData] = useState({
@@ -154,15 +155,21 @@ ${formData.message}
                 />
               </label>
 
-              <button type="submit">{t("common.openGmail")} ↗</button>
+              <button type="submit" className="contact__submit">
+                {t("common.openGmail")}
+                <FiArrowUpRight aria-hidden="true" />
+              </button>
             </form>
           </Reveal>
         </div>
 
         <Reveal className="contact__info" delay={0.16}>
-          {contactInfo.map(([label, value]) => (
+          {contactInfo.map(({ icon: Icon, label, value }) => (
             <div className="contact__info-card" key={label}>
-              <span>{label}</span>
+              <span className="contact__info-head">
+                <Icon aria-hidden="true" />
+                {label}
+              </span>
               <strong>{value}</strong>
             </div>
           ))}

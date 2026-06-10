@@ -319,9 +319,15 @@
   background: rgba(255, 255, 255, 0.11);
   backdrop-filter: blur(14px);
   overflow: hidden;
+  cursor: pointer;
   transition:
     box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
     background 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.products__card:focus-visible {
+  outline: 2px solid rgba(185, 149, 104, 0.7);
+  outline-offset: 3px;
 }
 
 .products__card:hover {

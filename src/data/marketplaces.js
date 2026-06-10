@@ -1,9 +1,14 @@
+import ozonIcon from "../assets/marketplaces-icon/ozon.png";
+import wildberriesIcon from "../assets/marketplaces-icon/wb.png";
+import yandexIcon from "../assets/marketplaces-icon/yandexmarket.png";
+import uzumIcon from "../assets/marketplaces-icon/uzummarket.png";
+
 export const marketplaces = [
   {
     id: 1,
     slug: "ozon",
     name: "Ozon",
-    logo: "/images/marketplaces/ozon.png",
+    logo: ozonIcon,
     accent: "#1f63ff",
     description: {
       uz: "Premium yog‘och buyumlarni Ozon orqali ko‘rish va xarid qilish imkoniyati.",
@@ -47,7 +52,7 @@ export const marketplaces = [
     id: 2,
     slug: "wildberries",
     name: "Wildberries",
-    logo: "/images/marketplaces/wildberries.png",
+    logo: wildberriesIcon,
     accent: "#b114b8",
     description: {
       uz: "Milliy ruhdagi dekor va sovg‘abop mahsulotlarni Wildberries orqali taqdim etish.",
@@ -91,7 +96,7 @@ export const marketplaces = [
     id: 3,
     slug: "yandex-market",
     name: "Yandex Market",
-    logo: "/images/marketplaces/yandex.png",
+    logo: yandexIcon,
     accent: "#f6c400",
     description: {
       uz: "Yandex Market orqali interyer va dekor uchun yog‘och buyumlar kolleksiyasi.",
@@ -135,7 +140,7 @@ export const marketplaces = [
     id: 4,
     slug: "uzum-market",
     name: "Uzum Market",
-    logo: "/images/marketplaces/uzum.png",
+    logo: uzumIcon,
     accent: "#7f4dff",
     description: {
       uz: "Uzum Market orqali mahalliy mijozlar uchun milliy premium yog‘och buyumlar.",

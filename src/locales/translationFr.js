@@ -25,8 +25,8 @@ const translationFr = {
 
   home: {
     kicker: "BOUKHARA / BOIS / ART",
-    titleOne: "Silent",
-    titleTwo: "Craft.",
+    titleOne: "Artisanat",
+    titleTwo: "Intemporel.",
     text: "La sculpture sur bois de Boukhara — une harmonie entre héritage, luxe discret et travail artisanal raffiné.",
     stats: [
       { value: "35+", label: "années d’expérience" },
@@ -52,8 +52,8 @@ const translationFr = {
 
   productsPage: {
     kicker: "Objets / Collection",
-    titleOne: "Quiet",
-    titleTwo: "Pieces.",
+    titleOne: "Pièces",
+    titleTwo: "Sculptées.",
     counter: "objets",
     featuredButton: "Voir",
     emptySmall: "Aucun produit",
@@ -62,8 +62,8 @@ const translationFr = {
 
   marketplacePage: {
     kicker: "Digital / Vitrine",
-    titleOne: "Market",
-    titleTwo: "Orbit.",
+    titleOne: "Boutique",
+    titleTwo: "en ligne.",
     platforms: "plateformes",
     label: "plateforme",
     statementSmall: "Moins de bruit.",
@@ -74,8 +74,8 @@ const translationFr = {
 
   about: {
     kicker: "Archive / Identité",
-    titleOne: "Quiet",
-    titleTwo: "Legacy.",
+    titleOne: "Notre",
+    titleTwo: "Héritage.",
     notFactory: "Ce n’est pas une usine.",
     statement: "Un artisanat familial façonné en silence moderne.",
     text: "La sculpture sur bois de Boukhara n’est pas seulement un décor, c’est une trace culturelle. Chaque détail apporte au lieu un luxe discret, un travail manuel et une sensation d’héritage.",
@@ -98,8 +98,8 @@ const translationFr = {
 
   contact: {
     kicker: "Demande / Studio",
-    titleOne: "Quiet",
-    titleTwo: "Contact.",
+    titleOne: "Restons",
+    titleTwo: "en contact.",
     locationLabel: "Naqshbandiy",
     open: "ouvert",
     forOrders: "aux commandes",

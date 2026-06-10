@@ -25,8 +25,8 @@ const translationTr = {
 
   home: {
     kicker: "BUHARA / AHŞAP / SANAT",
-    titleOne: "Silent",
-    titleTwo: "Craft.",
+    titleOne: "Zamansız",
+    titleTwo: "Zanaat.",
     text: "Buhara ahşap oymacılığı — miras, sakin lüks ve incelikli el işçiliğinin uyumu.",
     stats: [
       { value: "35+", label: "yıllık deneyim" },
@@ -52,8 +52,8 @@ const translationTr = {
 
   productsPage: {
     kicker: "Objeler / Koleksiyon",
-    titleOne: "Quiet",
-    titleTwo: "Pieces.",
+    titleOne: "Oyma",
+    titleTwo: "Eserler.",
     counter: "ürün",
     featuredButton: "Gör",
     emptySmall: "Ürün yok",
@@ -62,8 +62,8 @@ const translationTr = {
 
   marketplacePage: {
     kicker: "Dijital / Vitrin",
-    titleOne: "Market",
-    titleTwo: "Orbit.",
+    titleOne: "Çevrimiçi",
+    titleTwo: "Mağaza.",
     platforms: "platform",
     label: "platform",
     statementSmall: "Daha az gürültü.",
@@ -74,8 +74,8 @@ const translationTr = {
 
   about: {
     kicker: "Arşiv / Kimlik",
-    titleOne: "Quiet",
-    titleTwo: "Legacy.",
+    titleOne: "Bizim",
+    titleTwo: "Mirasımız.",
     notFactory: "Bu bir fabrika değil.",
     statement: "Modern sessizliğe dönüşmüş bir aile zanaatı.",
     text: "Buhara ahşap oymacılığı yalnızca dekor değildir; kültürel bir izdir. Her detay mekâna sakin lüks, el işçiliği ve miras duygusu taşır.",
@@ -98,8 +98,8 @@ const translationTr = {
 
   contact: {
     kicker: "Talep / Stüdyo",
-    titleOne: "Quiet",
-    titleTwo: "Contact.",
+    titleOne: "Bize",
+    titleTwo: "Ulaşın.",
     locationLabel: "Naqshbandiy",
     open: "açık",
     forOrders: "siparişler için",

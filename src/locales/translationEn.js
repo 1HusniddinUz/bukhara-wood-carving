@@ -25,7 +25,7 @@ const translationEn = {
 
   home: {
     kicker: "BUKHARA / WOOD / ART",
-    titleOne: "Silent",
+    titleOne: "Timeless",
     titleTwo: "Craft.",
     text: "Bukhara wood carving — a harmony of heritage, quiet luxury, and refined handcraft.",
     stats: [
@@ -52,7 +52,7 @@ const translationEn = {
 
   productsPage: {
     kicker: "Objects / Collection",
-    titleOne: "Quiet",
+    titleOne: "Carved",
     titleTwo: "Pieces.",
     counter: "items",
     featuredButton: "View",
@@ -62,8 +62,8 @@ const translationEn = {
 
   marketplacePage: {
     kicker: "Digital / Showcase",
-    titleOne: "Market",
-    titleTwo: "Orbit.",
+    titleOne: "Online",
+    titleTwo: "Store.",
     platforms: "platforms",
     label: "platform",
     statementSmall: "Less noise.",
@@ -74,8 +74,8 @@ const translationEn = {
 
   about: {
     kicker: "Archive / Identity",
-    titleOne: "Quiet",
-    titleTwo: "Legacy.",
+    titleOne: "Our",
+    titleTwo: "Heritage.",
     notFactory: "This is not a factory.",
     statement: "A family craft shaped into modern silence.",
     text: "Bukhara wood carving is not merely decoration; it is a cultural trace. Every detail brings quiet luxury, handcraft, and a sense of heritage into the space.",
@@ -98,8 +98,8 @@ const translationEn = {
 
   contact: {
     kicker: "Inquiry / Studio",
-    titleOne: "Quiet",
-    titleTwo: "Contact.",
+    titleOne: "Get in",
+    titleTwo: "Touch.",
     locationLabel: "Naqshbandiy",
     open: "open",
     forOrders: "for orders",

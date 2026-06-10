@@ -25,8 +25,8 @@ const translationRu = {
 
   home: {
     kicker: "БУХАРА / ДЕРЕВО / ИСКУССТВО",
-    titleOne: "Silent",
-    titleTwo: "Craft.",
+    titleOne: "Вечное",
+    titleTwo: "Ремесло.",
     text: "Бухарская резьба по дереву — гармония наследия, спокойной роскоши и тонкой ручной работы.",
     stats: [
       { value: "35+", label: "лет опыта" },
@@ -52,8 +52,8 @@ const translationRu = {
 
   productsPage: {
     kicker: "Изделия / Коллекция",
-    titleOne: "Quiet",
-    titleTwo: "Pieces.",
+    titleOne: "Резные",
+    titleTwo: "Изделия.",
     counter: "изделий",
     featuredButton: "Смотреть",
     emptySmall: "Нет изделия",
@@ -62,8 +62,8 @@ const translationRu = {
 
   marketplacePage: {
     kicker: "Цифровая / Витрина",
-    titleOne: "Market",
-    titleTwo: "Orbit.",
+    titleOne: "Онлайн",
+    titleTwo: "Магазин.",
     platforms: "платформы",
     label: "платформа",
     statementSmall: "Меньше шума.",
@@ -74,8 +74,8 @@ const translationRu = {
 
   about: {
     kicker: "Архив / Идентичность",
-    titleOne: "Quiet",
-    titleTwo: "Legacy.",
+    titleOne: "Наше",
+    titleTwo: "Наследие.",
     notFactory: "Это не фабрика.",
     statement: "Семейное ремесло, воплощённое в современной тишине.",
     text: "Бухарская резьба по дереву — это не просто декор, а культурный след. Каждая деталь привносит в пространство спокойную роскошь, ручную работу и ощущение наследия.",
@@ -98,8 +98,8 @@ const translationRu = {
 
   contact: {
     kicker: "Заявка / Студия",
-    titleOne: "Quiet",
-    titleTwo: "Contact.",
+    titleOne: "Свяжитесь",
+    titleTwo: "с нами.",
     locationLabel: "Накшбандий",
     open: "открыто",
     forOrders: "для заказов",

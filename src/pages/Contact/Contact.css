@@ -295,6 +295,17 @@
   box-shadow: var(--shadow-sm);
 }
 
+.contact__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact__submit svg {
+  font-size: 16px;
+}
+
 .contact__info {
   margin-top: 18px;
   display: grid;
@@ -323,6 +334,16 @@
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+.contact__info-head {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact__info-head svg {
+  font-size: 15px;
 }
 
 .contact__info-card strong {

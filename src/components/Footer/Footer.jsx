@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
+import { FaTelegram, FaInstagram, FaFacebookF } from "react-icons/fa6";
 import { company } from "../../data/company";
 import "./Footer.css";
 
@@ -23,7 +25,7 @@ export default function Footer() {
         <div className="footer__shell">
           <div className="footer__brand">
             <Link to="/" className="footer__mark">
-              <span>BWC</span>
+              <img src="/logo.png" alt={company.brand} />
             </Link>
 
             <div className="footer__brandText">
@@ -58,12 +60,18 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <a href={`mailto:${company.email}`}>{company.email}</a>
+                  <a href={`mailto:${company.email}`} className="footer__line">
+                    <FiMail aria-hidden="true" />
+                    <span>{company.email}</span>
+                  </a>
                 </li>
 
                 {company.phones.map((phone) => (
                   <li key={phone}>
-                    <a href={`tel:+${phone}`}>+{phone}</a>
+                    <a href={`tel:+${phone}`} className="footer__line">
+                      <FiPhone aria-hidden="true" />
+                      <span>+{phone}</span>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -74,19 +82,34 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <a href={company.telegram} target="_blank" rel="noreferrer">
-                    Telegram
+                  <a
+                    href={company.telegram}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footer__line"
+                  >
+                    <FaTelegram aria-hidden="true" />
+                    <span>Telegram</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href={company.instagram} target="_blank" rel="noreferrer">
-                    Instagram
+                  <a
+                    href={company.instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footer__line"
+                  >
+                    <FaInstagram aria-hidden="true" />
+                    <span>Instagram</span>
                   </a>
                 </li>
 
                 <li>
-                  <span>{company.facebook}</span>
+                  <span className="footer__line">
+                    <FaFacebookF aria-hidden="true" />
+                    <span>{company.facebook}</span>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -94,7 +117,10 @@ export default function Footer() {
             <div className="footer__group footer__group--address">
               <span className="footer__label">Studio</span>
 
-              <p>{company.address}</p>
+              <p className="footer__line footer__line--address">
+                <FiMapPin aria-hidden="true" />
+                <span>{company.address}</span>
+              </p>
             </div>
           </div>
 

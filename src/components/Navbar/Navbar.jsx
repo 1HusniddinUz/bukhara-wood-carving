@@ -2,20 +2,16 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { company } from "../../data/company";
+import LanguageSwitcher from "./LanguageSwitcher";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const closeMenu = () => setOpen(false);
   const toggleMenu = () => setOpen((prev) => !prev);
-
-  const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value);
-    closeMenu();
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +47,7 @@ export default function Navbar() {
           <nav className="navbar__shell" aria-label="Main navigation">
             <NavLink to="/" className="navbar__brand" onClick={closeMenu}>
               <div className="navbar__brand-mark">
-                <span>BWC</span>
+                <img src="/logo.png" alt={company.brand} />
               </div>
 
               <div className="navbar__brand-copy">
@@ -86,18 +82,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="navbar__mobileActions">
-                  <select
-                    className="navbar__language"
-                    value={i18n.language}
-                    onChange={changeLanguage}
-                    aria-label="Select language"
-                  >
-                    <option value="uz">UZ</option>
-                    <option value="ru">RU</option>
-                    <option value="en">EN</option>
-                    <option value="fr">FR</option>
-                    <option value="tr">TR</option>
-                  </select>
+                  <LanguageSwitcher variant="mobile" onSelect={closeMenu} />
 
                   <NavLink
                     to="/contact"
@@ -111,18 +96,9 @@ export default function Navbar() {
             </div>
 
             <div className="navbar__right">
-              <select
-                className="navbar__language navbar__language--desktop"
-                value={i18n.language}
-                onChange={changeLanguage}
-                aria-label="Select language"
-              >
-                <option value="uz">UZ</option>
-                <option value="ru">RU</option>
-                <option value="en">EN</option>
-                <option value="fr">FR</option>
-                <option value="tr">TR</option>
-              </select>
+              <div className="navbar__language--desktop">
+                <LanguageSwitcher variant="desktop" />
+              </div>
 
               <NavLink to="/contact" className="navbar__cta navbar__cta--desktop">
                 {t("nav.order")}

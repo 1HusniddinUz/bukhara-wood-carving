@@ -25,8 +25,8 @@ const translationUz = {
 
   home: {
     kicker: "BUXORO / YOG‘OCH / SAN’AT",
-    titleOne: "Silent",
-    titleTwo: "Craft.",
+    titleOne: "Boqiy",
+    titleTwo: "Hunar.",
     text: "Buxoro yog‘och o‘ymakorligi — meros, sokin hashamat va qo‘l mehnati uyg‘unligi.",
     stats: [
       { value: "35+", label: "yillik tajriba" },
@@ -52,8 +52,8 @@ const translationUz = {
 
   productsPage: {
     kicker: "Buyumlar / Kolleksiya",
-    titleOne: "Quiet",
-    titleTwo: "Pieces.",
+    titleOne: "O‘yilgan",
+    titleTwo: "Buyumlar.",
     counter: "mahsulot",
     featuredButton: "Ko‘rish",
     emptySmall: "Mahsulot yo‘q",
@@ -62,8 +62,8 @@ const translationUz = {
 
   marketplacePage: {
     kicker: "Raqamli / Vitrina",
-    titleOne: "Market",
-    titleTwo: "Orbit.",
+    titleOne: "Onlayn",
+    titleTwo: "Do‘kon.",
     platforms: "platforma",
     label: "platforma",
     statementSmall: "Kam shovqin.",
@@ -74,8 +74,8 @@ const translationUz = {
 
   about: {
     kicker: "Arxiv / Identitet",
-    titleOne: "Quiet",
-    titleTwo: "Legacy.",
+    titleOne: "Bizning",
+    titleTwo: "Merosimiz.",
     notFactory: "Bu zavod emas.",
     statement: "Bu oilaviy hunar zamonaviy sokinlikka aylangan.",
     text: "Buxoro yog‘och o‘ymakorligi — bu bezak emas, madaniyat izidir. Har bir detal makonga sokin hashamat, qo‘l mehnati va meros hissini olib kiradi.",
@@ -98,8 +98,8 @@ const translationUz = {
 
   contact: {
     kicker: "Murojaat / Studio",
-    titleOne: "Quiet",
-    titleTwo: "Contact.",
+    titleOne: "Biz bilan",
+    titleTwo: "Bog‘laning.",
     locationLabel: "Naqshbandiy",
     open: "ochiq",
     forOrders: "buyurtmalar uchun",
