@@ -98,7 +98,7 @@ ${formData.message}
               <div className="contact__ring contact__ring--two" />
 
               <div className="contact__plate">
-                <span>BWC</span>
+                <img src="/logo.png" alt="" />
               </div>
 
               <div className="contact__mini">

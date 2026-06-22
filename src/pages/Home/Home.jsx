@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal/Reveal";
+import { products } from "../../data/products";
+import workDoor from "../../assets/images/10.png";
+import workPanel from "../../assets/images/3.png";
+import workGift from "../../assets/images/9.png";
 import "./Home.css";
 
 const showcases = [
@@ -20,7 +24,7 @@ const showcases = [
       fr: "Intérieur",
       tr: "İç mekân",
     },
-    image: "/images/products/carved-door.jpg",
+    image: workDoor,
   },
   {
     title: {
@@ -37,7 +41,7 @@ const showcases = [
       fr: "Décor",
       tr: "Dekor",
     },
-    image: "/images/products/wood-panel.jpg",
+    image: workPanel,
   },
   {
     title: {
@@ -54,7 +58,7 @@ const showcases = [
       fr: "Souvenir",
       tr: "Hediye",
     },
-    image: "/images/products/wood-box.jpg",
+    image: workGift,
   },
 ];
 
@@ -107,57 +111,34 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <Reveal className="home__stage" delay={0.08}>
-            <motion.div
-              className="home__sculpture"
-              animate={{ rotateZ: [-1.4, 1.4, -1.4] }}
-              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <div className="home__ring home__ring--one" />
-              <div className="home__ring home__ring--two" />
-              <div className="home__ring home__ring--three" />
-
+          <Reveal className="home__hero-products" delay={0.08}>
+            {products.slice(0, 4).map((product, index) => (
               <motion.div
-                className="home__plate home__plate--main"
-                animate={{ y: [0, -8, 0] }}
-                transition={{
-                  duration: 7,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                className="home__hero-product"
+                key={product.id}
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                whileHover={{ y: -6 }}
               >
-                <span>BWC</span>
+                <Link to="/products">
+                  <div className="home__hero-product-media">
+                    <img
+                      src={product.image}
+                      alt={getText(product.title)}
+                      onError={(event) => {
+                        event.currentTarget.style.display = "none";
+                      }}
+                    />
+                  </div>
+
+                  <div className="home__hero-product-info">
+                    <small>{getText(product.title)}</small>
+                    <strong>{product.price}</strong>
+                  </div>
+                </Link>
               </motion.div>
-
-              <motion.div
-                className="home__plate home__plate--left"
-                animate={{ y: [0, 10, 0] }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-
-              <motion.div
-                className="home__plate home__plate--right"
-                animate={{ y: [0, -10, 0] }}
-                transition={{
-                  duration: 9,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-
-              <div className="home__small home__small--top">
-                <span>wood</span>
-              </div>
-
-              <div className="home__small home__small--bottom">
-                <span>crafted</span>
-                <strong>by hand</strong>
-              </div>
-            </motion.div>
+            ))}
           </Reveal>
         </div>
 
@@ -210,7 +191,7 @@ export default function Home() {
                         event.currentTarget.style.display = "none";
                       }}
                     />
-                    <span>BWC</span>
+                    <img className="home__work-watermark" src="/logo.png" alt="" />
                   </div>
 
                   <div className="home__work-info">

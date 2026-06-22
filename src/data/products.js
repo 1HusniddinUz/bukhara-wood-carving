@@ -19,7 +19,7 @@ export const products = [
     id: 1,
     slug: "carved-plate-dance-miniature",
     category: "decor",
-    price: "1 450 000 so‘m",
+    price: "1 500 $",
     image: img2,
     title: {
       uz: "Miniatyurali o‘yma likopcha",
@@ -40,7 +40,7 @@ export const products = [
     id: 2,
     slug: "wall-panel-rider-miniature",
     category: "decor",
-    price: "2 400 000 so‘m",
+    price: "1 500 $",
     image: img3,
     title: {
       uz: "Miniatyurali devor paneli",
@@ -61,7 +61,7 @@ export const products = [
     id: 3,
     slug: "oval-ornamental-plate",
     category: "decor",
-    price: "1 250 000 so‘m",
+    price: "1000 $",
     image: img4,
     title: {
       uz: "O‘yma bezakli oval likopcha",
@@ -82,7 +82,7 @@ export const products = [
     id: 4,
     slug: "elephant-table-decor",
     category: "decor",
-    price: "2 900 000 so‘m",
+    price: "400 $",
     image: img5,
     title: {
       uz: "Filli stol bezagi",
@@ -103,7 +103,7 @@ export const products = [
     id: 5,
     slug: "carved-chess-set",
     category: "souvenir",
-    price: "3 200 000 so‘m",
+    price: "3 500 $",
     image: img6,
     title: {
       uz: "O‘yma shaxmat to‘plami",
@@ -124,7 +124,7 @@ export const products = [
     id: 6,
     slug: "carved-wall-clock",
     category: "interior",
-    price: "1 800 000 so‘m",
+    price: "8 000 $",
     image: img7,
     title: {
       uz: "O‘yma devor soati",
@@ -145,7 +145,7 @@ export const products = [
     id: 7,
     slug: "carved-bird-panel",
     category: "decor",
-    price: "1 600 000 so‘m",
+    price: "2 000 $",
     image: img8,
     title: {
       uz: "Qush naqshli o‘yma panel",
@@ -166,7 +166,7 @@ export const products = [
     id: 8,
     slug: "octagonal-inlaid-box",
     category: "souvenir",
-    price: "980 000 so‘m",
+    price: "800 $",
     image: img9,
     title: {
       uz: "Sakkizburchak sadaf quti",
@@ -187,7 +187,7 @@ export const products = [
     id: 9,
     slug: "framed-caravan-panel",
     category: "interior",
-    price: "2 600 000 so‘m",
+    price: "1 000 $",
     image: img10,
     title: {
       uz: "Karvon miniatyurali ramka",
@@ -208,7 +208,7 @@ export const products = [
     id: 10,
     slug: "carved-chess-table",
     category: "furniture",
-    price: "5 400 000 so‘m",
+    price: "3 000 $",
     image: img11,
     title: {
       uz: "O‘yma shaxmat stoli",
@@ -229,7 +229,7 @@ export const products = [
     id: 11,
     slug: "chess-table-with-drawer",
     category: "furniture",
-    price: "5 900 000 so‘m",
+    price: "600 $",
     image: img12,
     title: {
       uz: "Tortmali shaxmat stoli",
@@ -250,7 +250,7 @@ export const products = [
     id: 12,
     slug: "paisley-carved-box",
     category: "souvenir",
-    price: "540 000 so‘m",
+    price: "100 $",
     image: img13,
     title: {
       uz: "Bodom shaklidagi o‘yma quti",
@@ -271,7 +271,7 @@ export const products = [
     id: 13,
     slug: "carved-pen-case",
     category: "souvenir",
-    price: "420 000 so‘m",
+    price: "70 $",
     image: img14,
     title: {
       uz: "O‘yma qalamdon",
@@ -290,30 +290,9 @@ export const products = [
   },
   {
     id: 14,
-    slug: "turned-wood-vase",
-    category: "decor",
-    price: "680 000 so‘m",
-    image: img15,
-    title: {
-      uz: "Yog‘och vaza",
-      ru: "Деревянная ваза",
-      en: "Turned Wood Vase",
-      fr: "Vase en bois tourné",
-      tr: "Ahşap Vazo",
-    },
-    description: {
-      uz: "Tabiiy yog‘och fakturasi saqlangan, qo‘lda yo‘nilgan nafis dekorativ vaza.",
-      ru: "Изящная декоративная ваза ручной токарной работы с сохранённой текстурой дерева.",
-      en: "An elegant hand-turned decorative vase that preserves the natural wood texture.",
-      fr: "Un vase décoratif tourné à la main qui préserve la texture naturelle du bois.",
-      tr: "Doğal ahşap dokusunu koruyan, elde tornalanmış zarif dekoratif vazo.",
-    },
-  },
-  {
-    id: 15,
     slug: "caravan-ornamental-plate",
     category: "decor",
-    price: "1 700 000 so‘m",
+    price: "250 $",
     image: imgKarvan,
     title: {
       uz: "Karvon naqshli likopcha",

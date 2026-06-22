@@ -261,14 +261,16 @@
   filter: saturate(1) contrast(1.04);
 }
 
-.market-detail__image span {
+.market-detail__watermark {
   position: absolute;
   z-index: 1;
-  font-family: var(--font-title);
-  font-size: 54px;
-  font-weight: 800;
-  letter-spacing: -0.12em;
-  color: rgba(31, 26, 22, 0.15);
+  top: 50%;
+  left: 50%;
+  width: 84px;
+  height: 84px;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  opacity: 0.45;
 }
 
 .market-detail__info small {

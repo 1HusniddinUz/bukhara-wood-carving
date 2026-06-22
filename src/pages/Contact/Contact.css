@@ -180,12 +180,11 @@
   border-color: rgba(255, 255, 255, 0.24);
 }
 
-.contact__plate span {
-  font-family: var(--font-title);
-  font-size: 76px;
-  font-weight: 800;
-  letter-spacing: -0.12em;
-  color: rgba(31, 26, 22, 0.22);
+.contact__plate img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  opacity: 0.9;
 }
 
 .contact__mini {
@@ -452,8 +451,9 @@
     height: 300px;
   }
 
-  .contact__plate span {
-    font-size: 58px;
+  .contact__plate img {
+    width: 92px;
+    height: 92px;
   }
 
   .contact__mini {

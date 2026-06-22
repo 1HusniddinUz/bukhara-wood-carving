@@ -121,7 +121,7 @@ export default function MarketDetail() {
                         event.currentTarget.style.display = "none";
                       }}
                     />
-                    <span>BWC</span>
+                    <img className="market-detail__watermark" src="/logo.png" alt="" />
                   </div>
 
                   <div className="market-detail__info">

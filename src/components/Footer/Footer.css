@@ -176,12 +176,11 @@
   border-color: rgba(255, 255, 255, 0.24);
 }
 
-.footer__plate span {
-  font-family: var(--font-title);
-  font-size: 46px;
-  font-weight: 800;
-  letter-spacing: -0.12em;
-  color: rgba(31, 26, 22, 0.2);
+.footer__plate img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  opacity: 0.85;
 }
 
 .footer__grid {
@@ -354,8 +353,9 @@
     height: 190px;
   }
 
-  .footer__plate span {
-    font-size: 38px;
+  .footer__plate img {
+    width: 56px;
+    height: 56px;
   }
 
   .footer__grid {

@@ -41,32 +41,22 @@ export default function About() {
             </h1>
 
             <div className="about__mark">
-              <span>BWC</span>
+              <img src="/logo.png" alt={company.brand} />
             </div>
           </div>
         </Reveal>
 
         <div className="about__layout">
-          <Reveal className="about__sculpture" delay={0.08}>
-            <motion.div
-              className="about__object"
-              animate={{ rotateZ: [-1.5, 1.5, -1.5], y: [0, -8, 0] }}
-              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <div className="about__ring about__ring--one" />
-              <div className="about__ring about__ring--two" />
-
-              <div className="about__plate about__plate--main">
-                <span>ASH</span>
-              </div>
-
-              <div className="about__plate about__plate--side" />
-
-              <div className="about__label">
-                <small>{t("about.master")}</small>
-                <strong>{company.founder}</strong>
-              </div>
-            </motion.div>
+          <Reveal className="about__video" delay={0.08}>
+            <video
+              src="https://duh0tu3dye.ufs.sh/f/riqnvJYgh86lronzqNYgh86lFHycS7Pno0kjVG94IqMBdQa5"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="metadata"
+            />
           </Reveal>
 
           <Reveal className="about__text-block" delay={0.12}>

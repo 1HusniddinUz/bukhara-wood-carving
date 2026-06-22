@@ -61,7 +61,7 @@ export default function MarketPlace() {
 
         <div className="market__wall">
           <div className="market__axis">
-            <span>BWC</span>
+            <img src="/logo.png" alt="" />
           </div>
 
           {marketplaces.map((market, index) => (

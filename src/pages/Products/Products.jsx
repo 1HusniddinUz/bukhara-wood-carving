@@ -160,7 +160,6 @@ export default function Products() {
                     event.currentTarget.style.display = "none";
                   }}
                 />
-                <span>BWC</span>
               </div>
 
               <div className="products__featured-content">
@@ -215,7 +214,7 @@ export default function Products() {
                         event.currentTarget.style.display = "none";
                       }}
                     />
-                    <span>BWC</span>
+                    <img className="products__watermark" src="/logo.png" alt="" />
                   </div>
 
                   <div className="products__card-info">

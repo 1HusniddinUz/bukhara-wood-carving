@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="footer__ring footer__ring--one" />
             <div className="footer__ring footer__ring--two" />
             <div className="footer__plate">
-              <span>ASH</span>
+              <img src="/logo.png" alt="" />
             </div>
           </div>
 
